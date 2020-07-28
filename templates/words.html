@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% for word in words %}
+    <div class="card-wrapper">
+      <div class="card">
+        <img src="/static/images/soon.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{ word.name }}</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{ word.translate }}</li>
+          <li class="list-group-item">{{ word.phrase }}</li>
+          <li class="list-group-item">{{ word.sentence }}</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">link</a>
+          <a href="#" class="card-link">link</a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endblock %}

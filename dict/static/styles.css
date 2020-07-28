@@ -1,0 +1,67 @@
+html, body {
+    height: 100%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.box div {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+                                          /*TOP NAV*/
+/* Style the navigation bar */
+.top-navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navbar links */
+.top-navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.active, a:hover {
+  background-color: wheat;
+}
+
+ /*Current/active navbar link */
+/*.active {*/
+/*  background-color: deepskyblue;*/
+/*}*/
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+                                        /*END TOP NAV*/
+
+                                        /*CARD*/
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 15rem;
+  height: 34rem;
+  margin: 1rem;
+}
+                                        /*END CARD*/
